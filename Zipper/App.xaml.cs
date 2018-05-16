@@ -13,7 +13,7 @@ namespace Zipper
         /// <param name="e">Argumentos de arranque.</param>
         protected override void OnStartup(StartupEventArgs e)
         {
-
+            new UI.Main().Show();
         }
     }
 }

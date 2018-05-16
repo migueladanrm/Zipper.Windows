@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zipper", "Zipper\Zipper.csproj", "{4FA61299-E6A7-4899-B612-F3CF4E17A970}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zipper.Core", "Zipper.Core\Zipper.Core.csproj", "{FD6A70C6-2626-444A-8CD6-F9F2F2A76294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zipper.Resources", "Zipper.Resources\Zipper.Resources.csproj", "{628D4696-7F31-46B5-930A-4124528D3751}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4FA61299-E6A7-4899-B612-F3CF4E17A970}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FA61299-E6A7-4899-B612-F3CF4E17A970}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FA61299-E6A7-4899-B612-F3CF4E17A970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6A70C6-2626-444A-8CD6-F9F2F2A76294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6A70C6-2626-444A-8CD6-F9F2F2A76294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6A70C6-2626-444A-8CD6-F9F2F2A76294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6A70C6-2626-444A-8CD6-F9F2F2A76294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628D4696-7F31-46B5-930A-4124528D3751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628D4696-7F31-46B5-930A-4124528D3751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628D4696-7F31-46B5-930A-4124528D3751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628D4696-7F31-46B5-930A-4124528D3751}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

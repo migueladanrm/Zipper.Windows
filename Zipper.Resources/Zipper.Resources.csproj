@@ -4,18 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4FA61299-E6A7-4899-B612-F3CF4E17A970}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Zipper</RootNamespace>
-    <AssemblyName>zipper</AssemblyName>
+    <ProjectGuid>{628D4696-7F31-46B5-930A-4124528D3751}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>Zipper.Resources</RootNamespace>
+    <AssemblyName>ZipperResources</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -50,17 +47,10 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="UI\Main.xaml.cs">
-      <DependentUpon>Main.xaml</DependentUpon>
-    </Compile>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -84,30 +74,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Zipper.Core\Zipper.Core.csproj">
-      <Project>{fd6a70c6-2626-444a-8cd6-f9f2f2a76294}</Project>
-      <Name>Zipper.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Zipper.Resources\Zipper.Resources.csproj">
-      <Project>{628d4696-7f31-46b5-930a-4124528d3751}</Project>
-      <Name>Zipper.Resources</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="UI\Main.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\Controls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
